@@ -1,10 +1,10 @@
 var d = require('domain').create();
 
-d.on('error', function(e) {
+d.on('error', (e) => {
    console.log('Custom Error: ' + e);
 });
-d.run(function() {
-  setTimeout(function () {
+d.run(() => {
+  setTimeout(() => {
     throw new Error('Failed!');
   }, Math.round(Math.random()*100));
 });

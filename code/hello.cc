@@ -13,7 +13,7 @@ using v8::Value;
 
 void Method(const FunctionCallbackInfo<Value>& args) {
   Isolate* isolate = args.GetIsolate();
-  args.GetReturnValue().Set(String::NewFromUtf8(isolate, "capital one"));
+  args.GetReturnValue().Set(String::NewFromUtf8(isolate, "node.university"));
 }
 
 void init(Local<Object> exports) {
